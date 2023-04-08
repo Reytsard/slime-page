@@ -1,8 +1,5 @@
-
-
-const addAboutContent = (content) => {
-    const contentBox = document.createElement('div');
-    content.removeChild(contentBox);
-    contentBox.innerHTML = '<div id="about"><p>We are a local business in Baguio</p><p>your one stop shop</p></div>';
-    content.appendChild(contentBox);
-}
+<div id="aboutTab">
+    <p>Philippine local Business</p>
+    <p>We are located at Baguio City, Philippines</p>
+    <p>making kids dream of having a slime and to be able to play with them</p>
+</div>

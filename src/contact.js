@@ -1,5 +1,8 @@
-
-const addContactContent = (content) => {
-    content.removeChild(contentBox);
-    contentBox.innerHTML = '<div id="contact"><div id="location">Philippines<br>Baguio<br>Contact us here</div><div id="links"><div class="facebook">facebook</div><div class="tiktok">tiktok</div><div class="instagram">instagram</div></div></div>';
-}
+<div id="contact-tab">
+    <div class="product" id="facebook">facebook</div>
+    <div class="product" id="tiktok">slime@baguio</div>
+    <div class="product" id="insta">instagram</div>
+    <div class="product" id="shopee">shopee</div>
+    <div class="product" id="lazada">lazada</div>
+    <div class="product" id="viber">viber</div>
+</div>
