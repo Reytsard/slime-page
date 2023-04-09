@@ -3,7 +3,8 @@ import { createHeader } from "./header";
 import { createButtons } from './buttons';
 import { makeMainContentDiv } from './main-content';
 import { createProductContent } from './products';
-
+import { createAboutContent } from './about';
+import { createContactContent } from './contact';
 
 const content = document.querySelector('#content');
 content.appendChild(createHeader());
@@ -14,13 +15,14 @@ const productBtn = content.querySelector('#product-btn');
 const aboutBtn = content.querySelector('#about-btn');
 const contactBtn = content.querySelector('#contact-btn');
 productBtn.addEventListener('click',() => {
-    productBtn.setAttribute('pointer-event','none');
-    mainContentDiv.innerHTML = createProductContent();
+    mainContentDiv.innerHTML = "";
+    mainContentDiv.appendChild(createProductContent());
 });
 aboutBtn.addEventListener('click',() => {
-    aboutBtn.style['pointer-event'] = 'none';
-    mainContentDiv.innerHTML = 'about tab has been opened';
+    mainContentDiv.innerHTML = "";
+    mainContentDiv.appendChild(createAboutContent());
 })
 contactBtn.addEventListener('click',() => {
-    mainContentDiv.innerHTML = 'contact tab has been opened';
+    mainContentDiv.innerHTML = "";
+    mainContentDiv.appendChild(createContactContent());
 });
